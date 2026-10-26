@@ -1,0 +1,43 @@
+# 引擎与导出模板（体积大，请自行下载，见 README）
+tools/godot/
+tools/downloads/
+tools/appdata/
+tools/tmp/
+tools/profile_repro/
+tools/previews/
+tools/blank_proj/
+tools/BlankTest.tmp
+
+# 工具目录：只保留仓库需要的生成/校验脚本
+tools/*
+!tools/gen_art.py
+!tools/gen_audio.py
+!tools/gen_maps.py
+!tools/check_art.py
+!tools/check_maps.py
+!tools/check_shots.py
+!tools/download.py
+!tools/pdownload.py
+!tools/sync_distribution.py
+
+# Godot 导入缓存
+project/.godot/
+
+# 构建产物（exe 100MB+，请作为 Release 附件分发）
+build/
+*.exe
+*.pck
+
+# 开发探针（不需要随仓库发布）
+project/tests/probe_*
+
+# 会话产生的临时目录与备份
+.dsh-acl-recovery/
+Godot/
+AincradProto/
+*.zip
+
+# 系统/编辑器噪音
+Thumbs.db
+desktop.ini
+.DS_Store

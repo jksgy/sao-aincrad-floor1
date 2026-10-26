@@ -1,0 +1,124 @@
+{
+  "klein_q1_intro": [
+    { "speaker": "克莱因", "text": "喂，那边的新人！别傻站着，这里可不是闹着玩的地方。", "effects": [ { "type": "quest_stage", "quest": "q1", "stage": 0 } ] },
+    { "speaker": "克莱因", "text": "我是克莱因。这里是「起始之镇」，整座城里最安全的地方。出了南门就是草原，怪物可不讲情面。" },
+    { "speaker": "克莱因", "text": "先去和那边的桐人聊聊吧，那家伙对战斗很有一套。之后用训练木桩找找手感。" }
+  ],
+  "klein_after_kirito": [
+    { "speaker": "克莱因", "text": "怎么样？桐人说的都记住了吧？按 J 挥剑攻击，按 K 闪避。去木桩那儿练练手。" }
+  ],
+  "klein_q1_ready": [
+    { "speaker": "克莱因", "text": "好样的！你已经像个战士了。这点经验拿去，记住，活下去比什么都重要。", "effects": [ { "type": "quest_reward", "quest": "q1" } ] },
+    { "speaker": "克莱因", "text": "对了，杂货商人最近在找人帮忙对付野猪。缺钱的话去东边找他。" }
+  ],
+  "klein_idle": [
+    { "speaker": "克莱因", "text": "有什么需要帮忙的？南门外的草原别走太深，狼群可不好惹。" },
+    { "speaker": "克莱因", "text": "体力见底就撤。贪刀是新手最常见的死因。" }
+  ],
+  "kirito_teach": [
+    { "speaker": "桐人", "text": "……你是新手玩家？听好，在这个世界里，HP 归零就是真正的死亡。", "effects": [ { "type": "quest_stage", "quest": "q1", "stage": 1 } ] },
+    { "speaker": "桐人", "text": "战斗的关键是观察敌人的动作。按 J 是普通攻击，可以三段连击；K 是闪避，中间有无敌时间；L 是剑技「突进斩」，2 级解锁。" },
+    { "speaker": "桐人", "text": "去那边的训练木桩试试。记住：命中比蛮干更重要。" }
+  ],
+  "kirito_idle": [
+    { "speaker": "桐人", "text": "挥剑要果断。体力不足时就退后，等它恢复再上。" },
+    { "speaker": "桐人", "text": "迷宫里的敌人攻击前会有明显预兆，绕到侧面反击。" }
+  ],
+  "merchant_q2_offer": [
+    { "speaker": "杂货商人", "text": "哦，你是克莱因介绍来的？太好了！" },
+    { "speaker": "杂货商人", "text": "南门外的野猪最近老糟蹋我的货。帮我解决 5 只，我付你 30 珂尔，再搭两瓶药水。怎么样？",
+      "choices": [
+        { "text": "交给我吧。", "jump": "merchant_accept" },
+        { "text": "我再想想。", "jump": "merchant_decline" }
+      ] }
+  ],
+  "merchant_accept": [
+    { "speaker": "杂货商人", "text": "痛快！野猪就在南门外的近郊。搞定后回来找我。", "effects": [ { "type": "quest_accept", "quest": "q2" } ] }
+  ],
+  "merchant_decline": [
+    { "speaker": "杂货商人", "text": "行，想好了再来。不过野猪可不等人哦。" }
+  ],
+  "merchant_q2_active": [
+    { "speaker": "杂货商人", "text": "野猪就在南门外近郊一带。杀满 5 只回来找我。", "cond": { "quest": "q2", "stage": 0 } },
+    { "speaker": "杂货商人", "text": "委托完成了吧？快让我看看你的战果。", "cond": { "quest": "q2", "stage": 1 } },
+    { "speaker": "杂货商人", "text": "哦！这利落的手法，五只一只不少。说好的报酬：30 珂尔，再加两瓶药水。",
+      "cond": { "quest": "q2", "stage": 1 },
+      "effects": [ { "type": "quest_stage", "quest": "q2", "stage": 1 }, { "type": "quest_reward", "quest": "q2" } ] },
+    { "speaker": "杂货商人", "text": "对了，听说迷宫调查队缺人手。攻略联络员就在镇子东北角，去找他聊聊？",
+      "cond": { "quest": "q2", "state": "rewarded" } }
+  ],
+  "merchant_q2_ready": [
+    { "speaker": "杂货商人", "text": "真是帮大忙了！这是说好的报酬，收好。", "effects": [ { "type": "quest_reward", "quest": "q2" } ] },
+    { "speaker": "杂货商人", "text": "对了，听说迷宫调查队缺人手。攻略联络员就在镇子东北角，去找他聊聊？" }
+  ],
+  "merchant_idle": [
+    { "speaker": "杂货商人", "text": "药水要么？出城前最好带几瓶，关键时刻能救命。",
+      "choices": [
+        { "text": "看看商品。", "jump": "merchant_shop" },
+        { "text": "离开。", "jump": "" }
+      ] }
+  ],
+  "merchant_shop": [
+    { "speaker": "杂货商人", "text": "随便看，童叟无欺。", "effects": [ { "type": "open_shop", "shop": "merchant" } ] }
+  ],
+  "blacksmith_hint": [
+    { "speaker": "铁匠", "text": "听说迷宫里藏着把不错的铁制长剑。眼尖的人才能在支路里找到它。", "effects": [ { "type": "flag", "name": "got_iron_hint", "value": true } ] },
+    { "speaker": "铁匠", "text": "当然，你要是不想跑迷宫，我这儿的青铜剑也够锋利。" }
+  ],
+  "blacksmith_idle": [
+    { "speaker": "铁匠", "text": "武器就是第二生命。看看需要点什么？",
+      "choices": [
+        { "text": "看看商品。", "jump": "blacksmith_shop" },
+        { "text": "离开。", "jump": "" }
+      ] }
+  ],
+  "blacksmith_shop": [
+    { "speaker": "铁匠", "text": "都是好东西，随便试。", "effects": [ { "type": "open_shop", "shop": "blacksmith" } ] }
+  ],
+  "liaison_q3_offer": [
+    { "speaker": "攻略联络员", "text": "你就是商人说的那个新人？来得正好。" },
+    { "speaker": "攻略联络员", "text": "一层迷宫深处发现了「守层 Boss」的大门，必须激活两处封印机关才能打开。愿意接下迷宫调查任务吗？",
+      "choices": [
+        { "text": "交给我。", "jump": "liaison_accept" },
+        { "text": "我再准备一下。", "jump": "liaison_decline" }
+      ] }
+  ],
+  "liaison_accept": [
+    { "speaker": "攻略联络员", "text": "好！遗迹在草原东侧尽头，迷宫 A 区从西侧入口进入。两处封印分别在 B 区和 C 区。", "effects": [ { "type": "quest_accept", "quest": "q3" } ] },
+    { "speaker": "攻略联络员", "text": "机关附近都有守卫。记住：活着回来，才有下一次调查。" }
+  ],
+  "liaison_decline": [
+    { "speaker": "攻略联络员", "text": "不急。装备和药水都备齐了再来。" }
+  ],
+  "liaison_q3_active": [
+    { "speaker": "攻略联络员", "text": "两处封印分别在迷宫 B 区和 C 区。全部激活后，Boss 门就会打开。路上小心。" }
+  ],
+  "liaison_wait": [
+    { "speaker": "攻略联络员", "text": "镇外的野猪还没处理完吧？先把眼前的威胁解决掉。" }
+  ],
+  "liaison_idle": [
+    { "speaker": "攻略联络员", "text": "机关都激活后，Boss 门前会有人接应你。祝武运昌隆。" }
+  ],
+  "asuna_prep": [
+    { "speaker": "亚丝娜", "text": "……你就是这次的攻略成员？我是亚丝娜。", "effects": [ { "type": "quest_force_ready", "quest": "q3" } ] },
+    { "speaker": "亚丝娜", "text": "听好，Boss 是狗头人领主，有两招必须小心：横向重斩，范围很大，看到扇形预警就绕到它身后；直线冲锋，锁定方向后不会拐弯，立刻横向闪开。" },
+    { "speaker": "亚丝娜", "text": "先在旁边的恢复点存档，检查药水。准备好了就进去。门，已经为你打开了。", "effects": [ { "type": "quest_reward", "quest": "q3" }, { "type": "quest_accept", "quest": "q4" }, { "type": "flag", "name": "asuna_talked", "value": true } ] }
+  ],
+  "asuna_after": [
+    { "speaker": "亚丝娜", "text": "我在这里等你的消息。……一定要活着回来。" }
+  ],
+  "asuna_post": [
+    { "speaker": "亚丝娜", "text": "……做到了呢。上面就是第二层。" },
+    { "speaker": "亚丝娜", "text": "但这座城还有 99 层。休息一下，然后继续前进吧。" }
+  ],
+  "villager_1": [ { "speaker": "居民", "text": "听说有人见过会发光的野猪……大概是酒馆里喝多了。" } ],
+  "villager_2": [ { "speaker": "居民", "text": "喷泉的水很干净。走累了就过来坐坐。" } ],
+  "villager_3": [ { "speaker": "居民", "text": "我哪也不敢去。草原上的狼嚎，整夜都听得见。" } ],
+  "villager_4": [ { "speaker": "居民", "text": "铁匠的手艺没得说，就是最近矿石涨价了……" } ],
+  "villager_5": [ { "speaker": "居民", "text": "公告牌上说迷宫调查有报酬。可惜我连剑都拿不动。" } ],
+  "villager_6": [ { "speaker": "居民", "text": "守层 Boss……那种东西真的存在吗？希望永远不用见到。" } ],
+  "boss_intro": [
+    { "speaker": "狗头人领主", "text": "……又有老鼠溜进来了。" },
+    { "speaker": "狗头人领主", "text": "也好。就让你成为本大爷的磨刀石吧！" }
+  ]
+}

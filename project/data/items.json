@@ -1,0 +1,21 @@
+[
+  { "id": "sword_starter", "name": "新手单手剑", "type": "weapon", "icon": "sword_starter",
+    "desc": "系统配发的入门单手剑。攻击 +4。", "atk": 4, "price": 10, "stack": 1, "sellable": true },
+  { "id": "sword_bronze", "name": "青铜单手剑", "type": "weapon", "icon": "sword_bronze",
+    "desc": "铁匠打造的青铜剑。攻击 +8。", "atk": 8, "price": 60, "stack": 1, "sellable": true },
+  { "id": "sword_iron", "name": "铁制长剑", "type": "weapon", "icon": "sword_iron",
+    "desc": "迷宫支路中发现的长剑。攻击 +12。", "atk": 12, "price": 120, "stack": 1, "sellable": true },
+  { "id": "armor_cloth", "name": "布衣", "type": "armor", "icon": "armor_cloth",
+    "desc": "普通布料上衣。防御 +1。", "def": 1, "price": 8, "stack": 1, "sellable": true },
+  { "id": "armor_leather", "name": "皮甲", "type": "armor", "icon": "armor_leather",
+    "desc": "轻便的皮革护甲。防御 +3。", "def": 3, "price": 40, "stack": 1, "sellable": true },
+  { "id": "old_charm", "name": "旧护符", "type": "accessory", "icon": "charm",
+    "desc": "藏在草原深处的护符。最大生命 +15。", "maxhp": 15, "price": 50, "stack": 1, "sellable": true },
+  { "id": "potion", "name": "小型恢复药水", "type": "consumable", "icon": "potion",
+    "desc": "恢复 40 点生命。使用冷却 2 秒。", "heal": 40, "price": 12, "stack": 20, "sellable": true,
+    "use_cooldown": 2.0, "usable": true },
+  { "id": "col", "name": "珂尔", "type": "currency", "icon": "col",
+    "desc": "艾恩葛朗特的通用货币。", "stack": 9999, "sellable": false },
+  { "id": "meat", "name": "兽肉", "type": "material", "icon": "meat",
+    "desc": "怪物掉落的兽肉，可以卖给商人。", "price": 3, "stack": 5, "sellable": true }
+]

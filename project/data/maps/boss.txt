@@ -1,0 +1,38 @@
+uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+uaaaaaaaaazaaazaaaaaaaaaaazaaazaaaaaaaau
+uaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaau
+uaaaaaaaaaaaaaaaaaaazaaaaaaaaaaaaaaaaaau
+uaaaAAAAAAAAAAAAAAAZAZAAAAAAAAAAAAAAaaau
+uaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaau
+uaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaau
+uaaaAa|aaaaaaaaaaaaaaaaaaaaaaaaaa|aAaaau
+uaaaAaaaaaaajaaaaaaaaaaaaaaajaaaaaaAaaau
+uaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaau
+uaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaau
+uaaaAiaaaaaaaaaaaaaaaaaaaaaaaaaaaaiAaaau
+uaaaAaaajaaaaaaaaaaa$aaaaaaaaaaajaaAaaau
+uaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaau
+uaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaau
+uaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaau
+uaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaau
+uaaaAa|aaaaaaaaaaaaajaaaaaaaaaaaa|aAaaau
+uaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaau
+uaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaaau
+uaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaau
+uaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaau
+uaaaaaaaaaaaaaauuuuaauuuuaaaaaaaaaaaaaau
+uaaaaaaaaaaaaaauuuuuXuuuuaaaaaaaaaaaaaau
+uaaaaaaaaaaaaaaaauaaaauaaaaaaaaaaaaaaaau
+uaaaaaaaaaaaaaaaauaaaauaaaaaaaaaaaaaaaau
+uaaaaaaaaaaaaaaaauaiiauaaaaaaaaaaaaaaaau
+uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+# name: 守层 Boss 之间
+# size: 40 28
+# music: boss
+# safe: false
+# boss: true
+# spawn: default 20 25
+# spawn: from_c 20 25
+# exit: to_maze_c 17 26 22 27 maze_c from_boss
+# gate: boss_entry_gate 20 23
+# autosave: true

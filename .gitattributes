@@ -1,0 +1,19 @@
+# 默认按文本处理，二进制资源不做换行转换
+* text=auto
+
+*.png binary
+*.jpg binary
+*.wav binary
+*.ttf binary
+*.otf binary
+*.exe binary
+
+*.gd text eol=lf
+*.tscn text eol=lf
+*.tres text eol=lf
+*.godot text eol=lf
+*.json text eol=lf
+*.cfg text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.py text eol=lf

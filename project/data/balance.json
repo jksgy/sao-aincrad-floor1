@@ -1,0 +1,79 @@
+{
+  "player": {
+    "base_speed": 90.0,
+    "level_cap": 5,
+    "xp_thresholds": [0, 40, 110, 220, 380],
+    "levelup": { "max_hp": 15, "max_sp": 4, "atk": 2, "def": 1 },
+    "start": { "level": 1, "hp": 100, "sp": 100, "atk": 6, "def": 2, "col": 30,
+               "weapon": "sword_starter", "armor": "armor_cloth", "potions": 3 },
+    "default_name": "旅人"
+  },
+  "combat": {
+    "attack_stamina": 6,
+    "dodge_stamina": 20,
+    "skill_stamina": 30,
+    "stamina_regen_delay": 0.75,
+    "stamina_regen_per_sec": 24.0,
+    "invuln_after_hit": 0.6,
+    "knockback": 90.0,
+    "town_hp_regen_per_sec": 2.0,
+    "town_sp_regen_per_sec": 30.0
+  },
+  "attack": {
+    "combo_mult": [1.0, 1.15, 1.4],
+    "windup": 0.10,
+    "active": 0.10,
+    "recover": 0.22,
+    "range": 30.0,
+    "arc_deg": 75.0,
+    "input_buffer": 0.12,
+    "combo_reset": 0.65
+  },
+  "dodge": {
+    "duration": 0.28,
+    "distance": 48.0,
+    "invuln_start": 0.06,
+    "invuln_end": 0.22,
+    "cooldown": 0.25
+  },
+  "skill_dash": {
+    "name": "突进斩",
+    "unlock_level": 2,
+    "stamina": 30,
+    "cooldown": 6.0,
+    "windup": 0.25,
+    "distance": 64.0,
+    "mult": 1.8,
+    "recover": 0.35
+  },
+  "potion": {
+    "heal": 40,
+    "cooldown": 2.0,
+    "stack": 20
+  },
+  "camera": {
+    "smoothing": 5.0,
+    "boss_zoom": 0.85,
+    "normal_zoom": 1.0,
+    "shake_decay": 2.2,
+    "shake_amp": 2.0
+  },
+  "enemy_general": {
+    "vision_range": 130.0,
+    "attack_range": 26.0,
+    "leash_range": 220.0,
+    "return_heal": 20.0,
+    "separation": 10.0
+  },
+  "boss": {
+    "id": "boss_kobold_lord",
+    "name": "狗头人领主",
+    "hp": 900, "atk": 24, "def": 5, "xp": 200, "col": 120,
+    "phase2_hp_ratio": 0.4,
+    "sweep": { "windup": 0.75, "range": 60.0, "arc_deg": 110.0, "mult": 1.0, "recover": 0.8 },
+    "charge": { "windup": 0.9, "distance": 160.0, "mult": 1.4, "recover": 1.2 },
+    "slam": { "windup": 1.0, "radius": 50.0, "mult": 1.3, "recover": 1.0 },
+    "phase2_speed_mult": 1.35
+  },
+  "audio_limits": { "max_same_sfx_in_0.3s": 3 }
+}

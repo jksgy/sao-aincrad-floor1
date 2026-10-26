@@ -1,0 +1,56 @@
+[
+  { "id": "klein", "name": "克莱因", "sprite": "klein",
+    "routes": [
+      { "cond": { "quest": "q1", "state": "active", "stage": 0 }, "start": "klein_q1_intro" },
+      { "cond": { "quest": "q1", "state": "active", "stage": 2 }, "start": "klein_after_kirito" },
+      { "cond": { "quest": "q1", "state": "active", "stage": 3 }, "start": "klein_after_kirito" },
+      { "cond": { "quest": "q1", "state": "ready" }, "start": "klein_q1_ready" },
+      { "cond": {}, "start": "klein_idle" }
+    ] },
+  { "id": "kirito", "name": "桐人", "sprite": "kirito",
+    "routes": [
+      { "cond": { "quest": "q1", "state": "active", "stage": 1 }, "start": "kirito_teach" },
+      { "cond": {}, "start": "kirito_idle" }
+    ] },
+  { "id": "merchant", "name": "杂货商人", "sprite": "merchant",
+    "shop": "merchant", "sells": ["potion"],
+    "routes": [
+      { "cond": { "quest": "q2", "state": "ready" }, "start": "merchant_q2_ready" },
+      { "cond": { "quest": "q2", "state": "active" }, "start": "merchant_q2_active" },
+      { "cond": { "quest": "q2", "state": "not_accepted", "need_done": "q1" }, "start": "merchant_q2_offer" },
+      { "cond": {}, "start": "merchant_idle" }
+    ] },
+  { "id": "blacksmith", "name": "铁匠", "sprite": "blacksmith",
+    "shop": "blacksmith", "sells": ["sword_bronze", "armor_leather"],
+    "routes": [
+      { "cond": { "quest": "q2", "state": "rewarded", "flag_not": "got_iron_hint" }, "start": "blacksmith_hint" },
+      { "cond": {}, "start": "blacksmith_idle" }
+    ] },
+  { "id": "liaison", "name": "攻略联络员", "sprite": "liaison",
+    "routes": [
+      { "cond": { "quest": "q3", "state": "not_accepted", "need_done": "q2" }, "start": "liaison_q3_offer" },
+      { "cond": { "quest": "q3", "state": "active" }, "start": "liaison_q3_active" },
+      { "cond": { "quest": "q3", "state": "not_accepted" }, "start": "liaison_wait" },
+      { "cond": {}, "start": "liaison_idle" }
+    ] },
+  { "id": "asuna", "name": "亚丝娜", "sprite": "asuna",
+    "routes": [
+      { "cond": { "flag": "boss_defeated" }, "start": "asuna_post" },
+      { "cond": { "quest": "q4", "state": "active" }, "start": "asuna_after" },
+      { "cond": {}, "start": "asuna_prep" }
+    ] },
+  { "id": "villager_1", "name": "居民", "sprite": "villagers", "sprite_index": 0,
+    "routes": [ { "cond": {}, "start": "villager_1" } ] },
+  { "id": "villager_2", "name": "居民", "sprite": "villagers", "sprite_index": 1,
+    "routes": [ { "cond": {}, "start": "villager_2" } ] },
+  { "id": "villager_3", "name": "居民", "sprite": "villagers", "sprite_index": 2,
+    "routes": [ { "cond": {}, "start": "villager_3" } ] },
+  { "id": "villager_4", "name": "居民", "sprite": "villagers", "sprite_index": 3,
+    "routes": [ { "cond": {}, "start": "villager_4" } ] },
+  { "id": "villager_5", "name": "居民", "sprite": "villagers", "sprite_index": 4,
+    "routes": [ { "cond": {}, "start": "villager_5" } ] },
+  { "id": "villager_6", "name": "居民", "sprite": "villagers", "sprite_index": 5,
+    "routes": [ { "cond": {}, "start": "villager_6" } ] },
+  { "id": "boss_kobold_lord", "name": "狗头人领主", "sprite": "boss",
+    "routes": [ { "cond": {}, "start": "boss_intro" } ] }
+]

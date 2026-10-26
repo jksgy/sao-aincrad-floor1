@@ -1,0 +1,8 @@
+[
+  { "id": "attack", "name": "普通攻击", "kind": "attack", "unlock_level": 1,
+    "desc": "三段连击：倍率 1.0 / 1.15 / 1.4，消耗体力 6。" },
+  { "id": "dodge", "name": "闪避", "kind": "dodge", "unlock_level": 1,
+    "desc": "短距离回避，中途约 0.16 秒无敌。消耗体力 20。" },
+  { "id": "skill_dash", "name": "突进斩", "kind": "skill", "unlock_level": 2, "icon": "skill",
+    "desc": "青白色剑光！沿朝向突进并对路径上的敌人造成 1.8 倍伤害。消耗体力 30，冷却 6 秒。" }
+]

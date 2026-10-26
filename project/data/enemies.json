@@ -1,0 +1,17 @@
+[
+  { "id": "boar", "name": "野猪", "sprite": "boar", "hp": 30, "atk": 10, "def": 1, "xp": 12, "col": 4,
+    "speed": 34.0, "chase_speed": 52.0, "windup": 0.5, "strike_time": 0.22, "recover": 0.9,
+    "attack_range": 22.0, "attack_type": "charge", "charge_dist": 44.0, "vision": 120.0, "leash": 200.0,
+    "drop_chance": 0.45,
+    "contact_hurtbox": false },
+  { "id": "wolf", "name": "草原狼", "sprite": "wolf", "hp": 48, "atk": 14, "def": 2, "xp": 18, "col": 6,
+    "speed": 48.0, "chase_speed": 68.0, "windup": 0.45, "strike_time": 0.2, "recover": 1.0,
+    "attack_range": 26.0, "attack_type": "pounce", "pounce_dist": 56.0, "vision": 135.0, "leash": 220.0,
+    "drop_chance": 0.35,
+    "contact_hurtbox": false },
+  { "id": "guardian", "name": "迷宫守卫", "sprite": "guardian", "hp": 70, "atk": 18, "def": 4, "xp": 25, "col": 10,
+    "speed": 26.0, "chase_speed": 42.0, "windup": 0.8, "strike_time": 0.25, "recover": 1.1,
+    "attack_range": 38.0, "attack_type": "swing", "swing_arc": 90.0, "vision": 120.0, "leash": 200.0,
+    "drop_chance": 0.25,
+    "contact_hurtbox": false }
+]
